@@ -28,7 +28,7 @@ function stopWatch() {
         hours++;
     }
 
-}
+
 
 
 // Add leading 0 to the display value if less than 10
@@ -50,31 +50,21 @@ if (hours < 10){
 else {
     displayHours = hours;
 }
-// Display the stopwatch
+
 document.getElementById("timerdisplay").innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
 
+}
 
-// Start the stopwatch
 function start() {
-    if (variable == "stopped"){
-        interval = setInterval(stopWatch, 1000);
-        variable = "started";
-    }
+    interval = window.setInterval(stopWatch, 1000);
 }
-// Stop the stopwatch
 function stop() {
-    clearInterval(interval);
-    variable = "stopped";
+    interval = window.clearInterval(interval);
 }
-// Reset the stopwatch
 function reset() {
-    clearInterval(interval);
+    window.clearInterval(interval);
     seconds = 0;
     minutes = 0;
     hours = 0;
-    displaySeconds = 0;
-    displayMinutes = 0;
-    displayHours = 0;
     document.getElementById("timerdisplay").innerHTML = "00:00:00";
-    variable = "stopped";
 }
