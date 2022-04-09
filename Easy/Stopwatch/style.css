@@ -42,7 +42,9 @@ h1{
 .stop > button {
     background-color: red;
 }
-
+.button > button:hover {
+    background-color: orange;
+}
 @media only screen and (max-width: 768px) {
     h1{
         font-size: 1.7rem;
@@ -61,4 +63,5 @@ h1{
     .button > button {
         padding: 6px 16px;
     }
+    
 }
