@@ -3,7 +3,7 @@ Hi this repository is where i will store my javascript projects. Feel free to lo
 ## Easy
 1.Project: [Tic Tac Toe]()
 2.Project: [Weather App]()
-3.Project: [Stopwatch]()
+3.Project: [Stopwatch](https://sweet-mooncake-ebc18c.netlify.app/)
 ## Medium
 1.Project: [Calculator]()
 2.Project: [To-Do-list]()
