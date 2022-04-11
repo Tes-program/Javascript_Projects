@@ -1,6 +1,8 @@
 /* Body */
 body {
-    background-color: blue;
+    background-image: url("mountains-1412683.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 h1 {
     text-align: center;
@@ -9,22 +11,24 @@ h1 {
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+input {
+  max-width: 400px;
+}
 .searchbar {
   width: 100%;
-  max-width: 370px;
+  max-width: 400px;
   display: flex;
+  margin: auto;
   justify-content: center;
+ 
 }
 .searchbar_input {
- 
-  flex-grow: 1;
   padding: 10px;
   outline: none;
-  border: 1px solid #ccc;
+  border: 1px #ffffff;
   border-radius: 20px 0 0 20px;
-  background: #f4faf9;
-  transition: background 0.25s, box-shadow 0.25s;
-  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 400px;
 }
 .searchbar_input:focus {
   background: white;
@@ -33,12 +37,12 @@ h1 {
 
 .searchbar_input::placeholder  {
   font-size: 0.89rem;
-  color: blue
+  color: black
 }
 
 .searchbutton {
   background-color: white;
-  color: aqua;
+  color: none;
   width: 40px;
   outline: none;
   border: none;
