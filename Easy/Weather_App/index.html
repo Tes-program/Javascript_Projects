@@ -6,20 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      
     <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Weather App</h1>
     <form>
         <div class="searchbar">
-            <input type="text" width = "400px" class="searchbar_input" id="search" placeholder="Type in your City">
+            <input type="text" class="searchbar_input" id="search" placeholder="Type in your City">
             <button type="submit" class="searchbutton" id="searchbtn">
                 <i class="material-icons">search</i>
             </button>
         </div>
     </form>
-   
+
+    <section>
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-10 col-lg-8 col-xl-6">
+      
+              <div class="card bg-dark text-white" style="border-radius: 40px;">
+                <div class="bg-image" style="border-radius: 35px;">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/draw1.webp"
+                    class="card-img"
+                    alt="weather"
+                  />
+                  <div class="mask" style="background-color: rgba(190, 216, 232, .5);"></div>
+                </div>
+                <div class="card-img-overlay text-dark p-5">
+                  <h4 class="mb-0" id="location">Juneau, Alaska, US</h4>
+                  <p class="display-2 my-3" id="temperature">1.28°C</p>
+                  <p class="mb-2">Feels Like: <strong class="temperature">-1.08 °C</strong></p>
+                  <h5 class="weather_condition">Snowy</h5>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
+    
 </body>
 </html>

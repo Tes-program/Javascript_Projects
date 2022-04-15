@@ -7,7 +7,7 @@ let hours = 0;
 // Hold the interval variable
 let interval = null;
 
-let variable = "stopped";
+
 
 // Hold the display values
 let displaySeconds = 0;
