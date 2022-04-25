@@ -14,7 +14,7 @@
  <h1></h1>
     <form>
         <div class="searchbar">
-            <input type="text" class="searchbar_input" id="search" placeholder="Type in your City">
+            <input type="text" class="searchbar_input" id="search" data-search-bar placeholder="Type in your City">
             <button type="submit" class="searchbutton" id="searchbtn">
                 <i class="material-icons">search</i>
             </button>
@@ -49,5 +49,8 @@
       </section>
     
 </body>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmU2zEIjL_pdJ6hdkTCQTrdsAX4CGW4II&libraries=places&callback=initMap">
+</script>
 <script src="script.js"></script>
 </html>
